@@ -1,0 +1,44 @@
+{
+  "name": "minion",
+  "version": "0.0.7",
+  "description": "the cutest desktop accessory ever for menu bar haters <3",
+  "author": "nezu",
+  "main": "main.js",
+  "scripts": {
+    "test": "electron .",
+    "start": "electron .",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder -mwl",
+    "dist:mac": "electron-builder --mac",
+    "dist:win": "electron-builder --win",
+    "dist:linux": "electron-builder --linux"
+  },
+  "build": {
+    "appId": "minion",
+    "mac": {
+      "icon": "icon.icns",
+      "category": "public.app-category.utilities"
+    },
+    "win": {
+      "icon": "icon.ico",
+      "target": "nsis"
+    },
+    "linux": {
+      "icon": "icon.icns",
+      "target": [
+        "AppImage",
+        "deb"
+      ]
+    }
+  },
+  "devDependencies": {
+    "electron": "^30.0.1",
+    "electron-builder": "^24.13.3",
+    "electron-reloader": "^1.2.3"
+  },
+  "dependencies": {
+    "electron-context-menu": "^3.6.0",
+    "electron-drag": "^2.0.0",
+    "squirrel": "^1.0.0"
+  }
+}

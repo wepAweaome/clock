@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>minion</title>
+    <link
+      rel="stylesheet"
+      href="theme.css" />
+    <link
+      rel="stylesheet"
+      href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@20,400,1,0" />
+  </head>
+  <body>
+    <!-- <button class="win-btn btn-menu">
+      <span class="material-symbols-sharp fh">
+        expand_more
+      </span>
+    </button> -->
+
+    <div id="titlebar"></div>
+
+    <svg
+      version="1.1"
+      id="clock_face"
+      xmlns="http://www.w3.org/2000/svg"
+      xmlns:xlink="http://www.w3.org/1999/xlink"
+      x="0px"
+      y="0px"
+      viewBox="0 0 150 150"
+      xml:space="preserve">
+      <!-- minute ticks -->
+      <g
+        id="minutes"
+        class="fh2"
+        style="opacity: 0.1">
+        <polygon points="81.1,12.1 82.1,12.1 83.4,0 82.4,0 	" />
+        <polygon points="87.9,12.1 88.9,12.1 91.5,0 90.4,0 	" />
+        <polygon points="94.9,12.1 96,12.1 99.9,0 98.8,0 	" />
+        <polygon points="102.5,12.1 103.6,12.1 108.9,0 107.8,0 	" />
+        <polygon points="120.1,12.1 121.3,12.1 130.1,0 128.9,0 	" />
+        <polygon points="131,12.1 132.3,12.1 143.2,0 141.9,0 	" />
+        <polygon points="138,17.6 138,18.9 150,8.1 150,6.8 	" />
+        <polygon points="138,28.6 138,29.8 150,21.1 150,19.9 	" />
+        <polygon points="138,46.4 138,47.5 150,42.2 150,41.1 	" />
+        <polygon points="138,54 138,55.1 150,51.2 150,50.1 	" />
+        <polygon points="138,61.1 138,62.1 150,59.6 150,58.5 	" />
+        <polygon points="150,66.6 138,67.9 138,68.9 150,67.6 	" />
+        <polygon points="138,81.1 138,82.1 150,83.4 150,82.4 	" />
+        <polygon points="138,87.9 138,88.9 150,91.5 150,90.4 	" />
+        <polygon points="138,94.9 138,96 150,99.9 150,98.8 	" />
+        <polygon points="138,102.5 138,103.6 150,108.9 150,107.8 	" />
+        <polygon points="138,120.2 138,121.4 150,130.1 150,128.9 	" />
+        <polygon points="138,131.1 138,132.4 150,143.2 150,141.9 	" />
+        <polygon points="132.5,138.1 131.1,138.1 141.9,150 143.2,150 	" />
+        <polygon points="121.4,138.1 120.2,138.1 128.9,150 130.1,150 	" />
+        <polygon points="103.6,138.1 102.5,138.1 107.8,150 108.9,150 	" />
+        <polygon points="96,138.1 95,138.1 98.8,150 99.9,150 	" />
+        <polygon points="88.9,138.1 87.9,138.1 90.4,150 91.5,150 	" />
+        <polygon points="82.1,138.1 81.1,138.1 82.4,150 83.4,150 	" />
+        <polygon points="68.9,138.1 67.9,138.1 66.6,150 67.6,150 	" />
+        <polygon points="62.1,138.1 61.1,138.1 58.5,150 59.6,150 	" />
+        <polygon points="55,138.1 54,138.1 50.1,150 51.2,150 	" />
+        <polygon points="47.5,138.1 46.4,138.1 41.1,150 42.2,150 	" />
+        <polygon points="29.8,138.1 28.6,138.1 19.9,150 21.1,150 	" />
+        <polygon points="18.9,138.1 17.5,138.1 6.8,150 8.1,150 	" />
+        <polygon points="12,132.4 12,131.1 0,141.9 0,143.2 	" />
+        <polygon points="12,121.4 12,120.2 0,128.9 0,130.1 	" />
+        <polygon points="12,103.6 12,102.5 0,107.8 0,108.9 	" />
+        <polygon points="12,96 12,94.9 0,98.8 0,99.9 	" />
+        <polygon points="12,88.9 12,87.9 0,90.4 0,91.5 	" />
+        <polygon points="12,82.1 12,81.1 0,82.4 0,83.4 	" />
+        <polygon points="12,68.9 12,67.9 0,66.6 0,67.6 	" />
+        <polygon points="12,62.1 12,61.1 0,58.5 0,59.6 	" />
+        <polygon points="12,55.1 12,54 0,50.1 0,51.2 	" />
+        <polygon points="12,47.5 12,46.4 0,41.1 0,42.2 	" />
+        <polygon points="12,29.8 12,28.6 0,19.9 0,21.1 	" />
+        <polygon points="12,18.9 12,17.6 0,6.8 0,8.1 	" />
+        <polygon points="17.7,12.1 19,12.1 8.1,0 6.8,0 	" />
+        <polygon points="28.7,12.1 29.9,12.1 21.1,0 19.9,0 	" />
+        <polygon points="46.4,12.1 47.5,12.1 42.2,0 41.1,0 	" />
+        <polygon points="54,12.1 55.1,12.1 51.2,0 50.1,0 	" />
+        <polygon points="61.1,12.1 62.1,12.1 59.6,0 58.5,0 	" />
+        <polygon points="67.9,12.1 68.9,12.1 67.6,0 66.6,0 	" />
+      </g>
+      <!-- hour ticks -->
+      <g
+        id="hours"
+        class="fh2"
+        style="opacity: 0.2">
+        <polygon points="109.6,12.1 113.1,12.1 120,0 116.6,0 	" />
+        <polygon points="138,36.9 138,40.4 150,33.4 150,30 	" />
+        <rect
+          x="138"
+          y="73.5"
+          width="12"
+          height="3" />
+        <polygon points="138,109.6 138,113.1 150,120 150,116.6 	" />
+        <polygon points="113.1,138.1 109.7,138.1 116.6,150 120,150 	" />
+        <rect
+          x="73.5"
+          y="138.1"
+          width="3"
+          height="11.9" />
+        <polygon points="40.3,138.1 36.9,138.1 30,150 33.4,150 	" />
+        <polygon points="12,113.1 12,109.6 0,116.6 0,120 	" />
+        <rect
+          y="73.5"
+          width="12"
+          height="3" />
+        <polygon points="12,40.4 12,36.9 0,30 0,33.4 	" />
+        <polygon points="36.9,12.1 40.4,12.1 33.4,0 30,0 	" />
+        <rect
+          x="73.5"
+          width="3"
+          height="12.1" />
+      </g>
+      <!-- clock border -->
+      <!-- <path class="fm2" id="border" d="M144,0H6H0v6v138v6h6h138h6v-6V6V0H144z M141,144H9c-1.7,0-3-1.3-3-3V9c0-1.7,1.3-3,3-3h132c1.7,0,3,1.3,3,3
+        v132C144,142.7,142.7,144,141,144z"/> -->
+      <!-- face -->
+      <polygon
+        class="fh2"
+        id="lefteye"
+        points="27,72 42,57 57,72 51,72 42,63 33,72 " />
+      <polygon
+        class="fh2"
+        id="righteye"
+        points="93,72 108,57 123,72 117,72 108,63 99,72 " />
+      <path
+        id="mouth"
+        class="b_inv"
+        d="M66,90c0,5,4,9,9,9s9-4,9-9H66z" />
+    </svg>
+
+    <div id="analog-clock">
+      <div
+        id="dot"
+        class="fh2"></div>
+      <div
+        id="hour"
+        class="fh2"></div>
+      <div
+        id="minute"
+        class="fh2"></div>
+      <div
+        id="second"
+        class="fm2"></div>
+    </div>
+
+    <div id="date-clock">
+      <p class="fh"></p>
+    </div>
+
+    <div id="digital-clock">
+      <p class="fh"></p>
+    </div>
+
+    <script src="theme.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
