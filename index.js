@@ -21,7 +21,7 @@ setInterval(() => {
   second.style.transform = `rotate(${sec_rotation}deg)`;
 
   // digital
-  time = t.toLocaleTimeString("en-gb", { hour12: false, timeStyle: "short" });
+  time = t.toLocaleTimeString("en-gb", { hour12: true, timeStyle: "short" });
   document.querySelector("#digital-clock p").innerHTML = time;
 
   // date
@@ -29,9 +29,9 @@ setInterval(() => {
     month: "short",
     day: "numeric",
   };
-  const weekday = ["日", "月", "火", "水", "木", "金", "土"];
+  const weekday = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
   let day = weekday[t.getDay()];
-  date = t.toLocaleDateString("ja-JP", dateFormat);
-  let fullDate = `${date}(${day})`;
+  date = t.toLocaleDateString("en-us", dateFormat);
+  let fullDate = `${day} ${date}`;
   document.querySelector("#date-clock p").innerHTML = fullDate;
 }, 1000);

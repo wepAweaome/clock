@@ -39,6 +39,7 @@
   "dependencies": {
     "electron-context-menu": "^3.6.0",
     "electron-drag": "^2.0.0",
+    "package.json": "^2.0.1",
     "squirrel": "^1.0.0"
   }
 }

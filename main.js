@@ -8,8 +8,8 @@ let mainWindow;
   mainWindow = new BrowserWindow({
     width: 90,
     height: 90,
-    x: 10,
-    y: 40,
+    x: 1820, // (1920-100)x(1080-100) in the bottom right
+    y: 980, 
     maximizable: false,
     fullscreenable: false,
     resizable: false,
@@ -17,15 +17,18 @@ let mainWindow;
     acceptFirstMouse: true,
     titleBarStyle: "hidden",
     // titleBarOverlay: true,
-    // alwaysOnTop: true,
-    skipTaskbar: false,
+    alwaysOnTop: true,
+    skipTaskbar: true,
+    focusable: false,
     roundedCorners: false,
     webPreferences: {
       nodeIntegration: true,
       contextIsolation: false,
     },
   });
-  mainWindow.setVisibleOnAllWorkspaces(true[(true, true)]);
+  mainWindow.setVisibleOnAllWorkspaces(true);
+  
+  //mainWindow.setType('dock');
   mainWindow.loadFile("index.html");
 })();
 
